@@ -1,4 +1,11 @@
 # HTML
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Microsoft Partner Network(228792f5-c6cb-4a82-a11e-29014100c018)'
+    appType: 'webAppLinux'
+    appName: 'teste3333'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    runtimeStack: 'STATICSITE|1.0'
 # Archive your static HTML project and save it with the build record.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
